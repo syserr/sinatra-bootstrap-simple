@@ -19,7 +19,7 @@ Included:
 I played with Ruby 1.9, Ruby 2.1, Thin (webserver), and Webrick.  All seemed to work.
 
 ==Starting from ground zero
-I would install all the "C" dependencies that RVM, Ruby, Gems rely on for the system.  There aren't many.  I may provide a list of the system deps so you can turn off autolibs below if you too are not a fan of having RVM do **sudo**.  Then, I would install RVM, Ruby, Gems etc as a user, I've been turned off by system installs of Ruby.  I kind of want my system pristine.  I want to know what makes my production environment special.
+I would install all the "C" dependencies that RVM, Ruby, Gems rely on for the system.  There aren't many.  I may provide a list of the system deps so you can turn off autolibs like I did below.  I do disable autolibs because I don't like RVM running **sudo**.  Then, after the system is ready -- I would install RVM, Ruby, Gems etc as a non-root user in the user's home directory.  I kind of want my system pristine.  I want to know what makes my development and production environment special.
 
 On Linux I can do this as a non-root user (I'm sure OSX is similar):
 {{{
