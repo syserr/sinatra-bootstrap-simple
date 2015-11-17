@@ -6,11 +6,11 @@ class App < Sinatra::Base
   register Sinatra::Reloader
 
   get '/' do
-    @the_number = rand(3000)
+    @randy = rand(3000)
 
     session[:count] = 0 if session[:count] == nil
     session[:count] += 1
 
-    erb :dashboard
+    erb :index
   end
 end
